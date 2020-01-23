@@ -1,0 +1,7 @@
+#!/usr/bin/env perl
+# oldmcdonald - wrapper script to launch OldMcDonald's Farm
+# author - Nathan Waddell <nathan.e.waddell@gmail.nospam.com>
+use FindBin;
+use lib "$FindBin::Bin/../lib";
+use OldMcDonald;
+OldMcDonald->new_with_options->run();

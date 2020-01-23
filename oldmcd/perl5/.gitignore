@@ -1,0 +1,14 @@
+# .gitignore for OldMcDonald
+# ignore Komodo IDE project files
+*.komodoproject
+# ignore Komodo tools directory
+.komodotools/
+# ignore carton local directory
+local/
+# ignore tmp/backup files
+*.bak
+*.backup
+*.old
+*.tmp
+*.temp
+*~

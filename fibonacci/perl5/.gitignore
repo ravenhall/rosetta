@@ -1,0 +1,3 @@
+# .gitignore
+# ignore Carton local directory
+local/

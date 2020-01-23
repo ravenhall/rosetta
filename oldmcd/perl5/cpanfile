@@ -1,0 +1,3 @@
+# cpanfile for Old McDonald
+requires 'Moose';
+requires 'MooseX::App::Simple';

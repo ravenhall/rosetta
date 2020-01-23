@@ -1,0 +1,47 @@
+{
+  "name": "oldmcdonald",
+  "version": "1.0.0",
+  "description": "Old McDonald's Farm",
+  "author": "Nathan Waddell <nathan.e.waddell@nospam.gmail.com>",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+    },
+  "dependencies": {
+    {
+      "name": "Farm",
+      "description": "Farm class",
+      "private": true,
+      "version": "1.0.0",
+      "main": "app.js",
+      },
+    {
+      "name": "Animal",
+      "description": "Animal class",
+      "private": true,
+      "version": "1.0.0",
+      "main": "app.js",
+      },
+    {
+      "name": "Cow",
+      "description": "Cow class",
+      "private": true,
+      "version": "1.0.0",
+      "main": "Animal.js",
+      },
+    {
+      "name": "Pig",
+      "description": "Pig class",
+      "private": true,
+      "version": "1.0.0",
+      "main": "Animal.js",
+      },
+    {
+      "name": "Horse",
+      "description": "Horse class",
+      "private": true,
+      "version": "1.0.0",
+      "main": "Animal.js",
+      },
+  }
+}
