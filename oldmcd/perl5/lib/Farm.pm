@@ -47,9 +47,6 @@ sub BUILD {
     my $animal = $animalType->new;
     $self->add_animal($animal);
   }
-  
-  # sing, my angels!
-  $self->sing;
 }
 
 sub sing {

@@ -33,6 +33,7 @@ sub run {
     say "Welcome to Old McDonald's farm!";
     
     my $farm = Farm->new;
+    $farm->sing;
 }
 
 1;

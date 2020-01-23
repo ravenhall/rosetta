@@ -1,0 +1,4 @@
+# chatty tests by default
+--verbose
+# add lib dir to @INC for tests
+-Ilib/
