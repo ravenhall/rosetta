@@ -28,13 +28,8 @@ use Animal::Pig;
 use Animal::Horse;
 
 has 'owner' => (is => 'rw', isa => 'Str');
-has 'animals' => (
-  traits  => ['Array'],
-  is      => 'rw',
-  isa     => 'ArrayRef[Object]',
-  default => sub { [] },
-  handles => {add_animal => 'push', next_animal => 'shift'},
-);
+has 'animals' =>
+  (traits => ['Array'], is => 'rw', isa => 'ArrayRef[Object]', default => sub { [] }, handles => {add_animal => 'push', next_animal => 'shift'},);
 
 sub BUILD {
   my $self = shift;

@@ -28,12 +28,12 @@ use Farm;
 # parameters and options would normally go here but this is a simple app
 
 sub run {
-    my ($self) = @_;
-    
-    say "Welcome to Old McDonald's farm!";
-    
-    my $farm = Farm->new;
-    $farm->sing;
+  my ($self) = @_;
+
+  say "Welcome to Old McDonald's farm!";
+
+  my $farm = Farm->new;
+  $farm->sing;
 }
 
 1;

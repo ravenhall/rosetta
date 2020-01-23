@@ -10,7 +10,7 @@ use Test::More;
 
 # app modules
 use Animal::Pig;
- 
+
 my $a = Animal::Pig->new;
 
 # instantiation test
