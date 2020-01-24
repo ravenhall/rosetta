@@ -1,0 +1,32 @@
+#!/usr/bin/env perl
+use FindBin qw($RealBin);
+use lib "$RealBin/../lib";
+use lib "$RealBin/../local";
+use Mojolicious::Lite;
+use OldMcDonald;
+
+get '/' => sub {
+  my $c = shift;
+  my $farm = @{ OldMcDonald->new_with_options->run() };
+  # TODO: return 500 and error page if no $farm
+  $c->stash(farm => $farm);
+  $c->render(template => 'index');
+};
+
+app->start;
+__DATA__
+
+@@ index.html.ep
+% layout 'default';
+% title 'OldMcDonald's Farm';
+% my $farm = stash('farm');
+% foreach my $line(@{$farm}) {
+<h3>$line</h3>
+%}
+
+@@ layouts/default.html.ep
+<!DOCTYPE html>
+<html>
+  <head><title><%= title %></title></head>
+  <body><%= content %></body>
+</html>
